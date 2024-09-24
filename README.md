@@ -4,6 +4,31 @@
 
 [![Four Keys YouTube Video](images/youtube-screenshot.png)](https://www.youtube.com/watch?v=2rzvIL29Nz0 "Measuring Devops: The Four Keys Project")
 
+# Fork of FourKeys to run on Azure (instead of gcp) 
+- forked from https://github.com/dora-team/fourkeys
+
+## - Some services can run locally (Python)
+## - Run on AKS instead of GCloud
+### Dockerfiles to convert (mvp)
+- builder
+- new Source Template
+- gitlab parser
+- graphana dashboard
+## Querys to convert
+- events.sql
+- incidents.sql
+- dashboard json
+- e2e tests
+- 
+## - Terraform to be ported to Azure
+- example
+## - Convert Pub/Sub
+## - Azure Synapse Analytics in place of BigQuery
+
+## - BI in place of ...
+
+
+
 # Background
 
 Through six years of research, the [DevOps Research and Assessment (DORA)](https://cloud.google.com/blog/products/devops-sre/the-2019-accelerate-state-of-devops-elite-performance-productivity-and-scaling) team has identified four key metrics that indicate the performance of software delivery. Four Keys allows you to collect data from your development environment (such as GitHub or GitLab) and compiles it into a dashboard displaying these key metrics.
